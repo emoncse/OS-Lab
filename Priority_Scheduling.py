@@ -31,4 +31,3 @@ sorted_process = sorting_process(task=process)
 p = gantt_generator(process=sorted_process)
 print('GANTT Chart String: ', p[0])
 print('Average waiting Time: ', p[1])
-

@@ -17,16 +17,16 @@ def main_process(length_of_queue, head_start, array):
 
     for x in range(0, length_of_queue):
         if int(array[x]) > second_value:
-            path = path+' ' + array[x]
-            total_distance = total_distance+(int(array[x])-second_value)
+            path = path + ' ' + array[x]
+            total_distance = total_distance + (int(array[x]) - second_value)
             second_value = int(array[x])
         else:
             path = path + ' ' + array[x]
-            total_distance = total_distance+(second_value-int(array[x]))
+            total_distance = total_distance + (second_value - int(array[x]))
             second_value = int(array[x])
 
     print('Total Distance : ' + str(total_distance))
-    print('Path : '+path)
+    print('Path : ' + path)
 
 
 a, b = take_queue()

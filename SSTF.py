@@ -17,9 +17,9 @@ def main_function():
     path = str(head_start)
     two_array = []
     for i in range(0, len(array)):
-        value_head_difference = [int(array[i]), head_start,0]
+        value_head_difference = [int(array[i]), head_start, 0]
         two_array.append(value_head_difference)
-    for z in range(length_of_queue,0,-1):
+    for z in range(length_of_queue, 0, -1):
         value_head_difference = []
         finding_min = []
         for m in range(0, len(two_array)):
@@ -43,8 +43,8 @@ def main_function():
         length_of_queue = int(len(two_array))
         print(len(two_array))
         print(two_array)
-        print('Total distance : '+str(sum))
-        print('Path : '+path)
+        print('T    otal distance : ' + str(sum))
+        print('Path : ' + path)
 
 
 main_function()
