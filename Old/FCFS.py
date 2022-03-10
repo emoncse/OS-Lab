@@ -1,3 +1,6 @@
+# First Come First Serve
+#
+
 def take_queue():
     input_queue = input('Input queue : ')
     array = input_queue.split(',')
